@@ -1,7 +1,6 @@
 joblib==1.0.1
 nltk==3.6.7
 Pillow==9.1.0
-click==8.0.4
 streamlit>=1.8.1
 tensorflow==2.8.0
 xgboost==1.5.1
