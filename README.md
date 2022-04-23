@@ -1,5 +1,5 @@
 # Cyberbully-Detection🚨
-![Cyber Bullying](https://user-images.githubusercontent.com/81012989/164683078-36d17416-7f5b-4c93-bdd8-3c778fea8c8d.jpg)
+<img width="957" alt="image" src="https://user-images.githubusercontent.com/81012989/164934713-058d82a2-6c44-4b92-a29f-de0ecdbd5a95.png">
 
 ## Introduction
 Cyberbully detector is an application that classifies whether a comment is toxic or not. 
