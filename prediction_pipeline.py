@@ -9,7 +9,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 sw = stopwords.words('english')
 lm = joblib.load('./Models/Lemmatizer.pkl')
-model = tensorflow.keras.models.load_model('./LSTM/Callbacks/model.02-0.42.h5')
+model = tensorflow.keras.models.load_model('./LSTM/Callbacks/model.02-0.43.h5')
 one_hot_df = pd.read_csv('./Datasets/One Hot Encoded Data.csv').set_index('Word')
 
 mapper = {0 : 'Not Toxic', 1 : 'Toxic'}
