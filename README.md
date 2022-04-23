@@ -21,7 +21,7 @@ This dataset is a collection of datasets from different sources related to the a
 * Now I used **WordNetLemmatizer** for converting each of the tokens to their root words.
 * Once the data is cleaned, I used **WordEmbedding** technique to convert words into vectors.
 
-### :cloud Word Cloud
+### ☁️ Word Cloud
 ![Toxic Word Cloud](https://user-images.githubusercontent.com/81012989/164935432-667a37e3-6035-4784-bd3b-ee5d26b1358c.png)
 
 ### ⚙ Model Training:
