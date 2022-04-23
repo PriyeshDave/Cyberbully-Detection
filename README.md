@@ -21,6 +21,10 @@ This dataset is a collection of datasets from different sources related to the a
 * Now I used **WordNetLemmatizer** for converting each of the tokens to their root words.
 * Once the data is cleaned, I used **WordEmbedding** technique to convert words into vectors.
 
+### Word Clouds
+* Toxic Comments
+![Toxic Word Cloud](https://user-images.githubusercontent.com/81012989/164935432-667a37e3-6035-4784-bd3b-ee5d26b1358c.png)
+
 ### ⚙ Model Training:
 * The model is trained using **BidirectionalLSTM** with a vocabulary size of 16K and each word reprented by a vector of length 300.
 * My trained model gives an accuracy of **91%** on train data while of **81%** on test data.
