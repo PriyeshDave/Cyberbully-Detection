@@ -24,12 +24,11 @@ def main():
 
     if submit:
        pred = get_predictions(comment)
-       st.write(pred)
-       # if pred == 'Toxic':
-       #        st.write('Ughhh!!! It seems like a Toxic comment.😒')
-       # else:
-       #        st.write('Not toxic.🙂')
-       #st.write(f"The predicted severity is:  {pred}")
+    
+       if pred[0] == 'Toxic':
+              st.write('Ughhh!!! It seems like a Toxic comment.😒 with probability of {}'.format(round(pred[1], 2)))
+       else:
+              st.write('Not toxic.🙂 with a predicted probability of {}'.format(round(pred[1], 2)))
 
 if __name__ == '__main__':
     main()
