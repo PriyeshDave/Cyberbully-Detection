@@ -64,14 +64,23 @@ def word_embedding(sentence):
   return embedded_docs
 
 def get_predictions(sentence):
-  print('Sentence Length: ', len(sentence))
-  sentence = cleanData(sentence)
-  print('Sentence Length: ', len(sentence))
   print(sentence)
-  data_lstm = word_embedding(sentence)
+  print('Sentence Length: ', len(sentence))
+  
+  cleaned_sentence = cleanData(sentence)
+  print(cleaned_sentence)
+  print('Cleaned Sentence Length: ', len(cleaned_sentence))
+
+  # checking if sentence contains only stop words
+  if len(cleaned_sentence) == 0:
+    cleaned_sentence = sentence
+
+  data_lstm = word_embedding(cleaned_sentence)
   print('Embeded Docs: ', data_lstm)
+
   predicted_probability = model.predict(data_lstm)[0][0]
   print('Predicted Probability: ', predicted_probability)
+
   prediction = (predicted_probability >= 0.5)
 
   return (mapper[int(prediction)], predicted_probability)
