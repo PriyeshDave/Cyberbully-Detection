@@ -1,16 +1,12 @@
 import pandas as pd
 import nltk
 import re
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
 import tensorflow
 import joblib
 #from tensorflow.keras.preprocessing.text import one_hot
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-nltk.download('stopwords')
-nltk.download('wordnet')
-sw = stopwords.words('english')
+sw = pd.read_csv('./Datasets/StopWords.csv')['StopWords'].to_list()
 lm = joblib.load('./Models/Lemmatizer.pkl')
 model = tensorflow.keras.models.load_model('./LSTM/Callbacks/model.02-0.43.h5')
 one_hot_df = pd.read_csv('./Datasets/One Hot Encoded Data.csv').set_index('Word')
