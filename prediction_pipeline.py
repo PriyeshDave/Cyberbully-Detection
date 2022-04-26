@@ -5,9 +5,12 @@ import tensorflow
 import joblib
 #from tensorflow.keras.preprocessing.text import one_hot
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from nltk.stem import WordNetLemmatizer
 
 sw = pd.read_csv('./Datasets/StopWords.csv')['StopWords'].to_list()
-lm = joblib.load('./Models/Lemmatizer.pkl')
+nltk.download('wordnet')
+lm = WordNetLemmatizer()
+# lm = joblib.load('./Models/Lemmatizer.pkl')
 model = tensorflow.keras.models.load_model('./LSTM/Callbacks/model.02-0.43.h5')
 one_hot_df = pd.read_csv('./Datasets/One Hot Encoded Data.csv').set_index('Word')
 
