@@ -1,4 +1,10 @@
 # Cyberbully-Detection🚨
+![Python](https://img.shields.io/badge/Python-3.9-blueviolet)
+![Machine Learning](https://img.shields.io/badge/-Machine%20Learning-blue)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-LSTM-lightgrey)
+![Natural Language Processing](https://img.shields.io/badge/-NLP-yellow)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
+
 <img width="786" alt="image" src="https://user-images.githubusercontent.com/81012989/164935200-3953daf1-f92b-4383-b783-cec06cc1e0f5.png">
 
 ## Introduction
